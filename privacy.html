@@ -15,91 +15,272 @@
       <img src="assets/apple-touch-icon.png" alt="" width="36" height="36">
       Mind Upgrade
     </a>
-    <div class="lang-toggle">
-      <button type="button" data-lang="en" class="active">EN</button>
-      <button type="button" data-lang="zh-Hant">中文</button>
-    </div>
+    <select class="lang-selector" onchange="changeLanguage(this.value)" aria-label="Language">
+      <option value="en">English</option>
+      <option value="zh-Hant">繁體中文</option>
+      <option value="zh-Hans">简体中文</option>
+      <option value="ja">日本語</option>
+      <option value="ko">한국어</option>
+      <option value="es">Español</option>
+      <option value="pt-BR">Português (Brasil)</option>
+    </select>
   </header>
 
   <main class="legal">
-    <h1 class="en">Privacy Policy</h1>
-    <h1 class="zh">隱私政策</h1>
-    <p class="updated en">Last updated: June 11, 2026</p>
-    <p class="updated zh">最後更新：2026 年 6 月 11 日</p>
+    <h1 lang-data="en">Privacy Policy</h1>
+    <h1 lang-data="zh-Hant">隱私政策</h1>
+    <h1 lang-data="zh-Hans">隐私政策</h1>
+    <h1 lang-data="ja">プライバシーポリシー</h1>
+    <h1 lang-data="ko">개인정보 처리방침</h1>
+    <h1 lang-data="es">Política de privacidad</h1>
+    <h1 lang-data="pt-BR">Política de privacidade</h1>
 
-    <div class="disclaimer-box en">
+    <p class="updated" lang-data="en">Last updated: August 18, 2026</p>
+    <p class="updated" lang-data="zh-Hant">最後更新：2026 年 8 月 18 日</p>
+    <p class="updated" lang-data="zh-Hans">最后更新：2026 年 8 月 18 日</p>
+    <p class="updated" lang-data="ja">最終更新：2026年8月18日</p>
+    <p class="updated" lang-data="ko">최종 업데이트: 2026년 8월 18일</p>
+    <p class="updated" lang-data="es">Última actualización: 18 de agosto de 2026</p>
+    <p class="updated" lang-data="pt-BR">Última atualização: 18 de agosto de 2026</p>
+
+    <div class="disclaimer-box" lang-data="en">
       Summary: Mind Upgrade stores your journal on your device and syncs through your personal iCloud account. We do not collect, access, or sell your journal content.<br><br>
       <strong>Support:</strong> For app questions, email <a href="mailto:howly7777777@gmail.com">howly7777777@gmail.com</a> (this page is our App Store support URL).
     </div>
-    <div class="disclaimer-box zh">
+    <div class="disclaimer-box" lang-data="zh-Hant">
       摘要：Mind Upgrade 將日記存在你的裝置，並透過你個人的 iCloud 帳號同步。我們不收集、存取或出售你的日記內容。<br><br>
-      <strong>支援：</strong> App 相关问题请寄 <a href="mailto:howly7777777@gmail.com">howly7777777@gmail.com</a>（本页为 App Store Support URL）。
+      <strong>支援：</strong>App 相關問題請寄 <a href="mailto:howly7777777@gmail.com">howly7777777@gmail.com</a>（本頁為 App Store Support URL）。
+    </div>
+    <div class="disclaimer-box" lang-data="zh-Hans">
+      摘要：Mind Upgrade 将日记存在你的设备，并通过你个人的 iCloud 账号同步。我们不收集、访问或出售你的日记内容。<br><br>
+      <strong>支持：</strong>App 相关问题请寄 <a href="mailto:howly7777777@gmail.com">howly7777777@gmail.com</a>（本页为 App Store Support URL）。
+    </div>
+    <div class="disclaimer-box" lang-data="ja">
+      概要：Mind Upgradeは日記を端末に保存し、あなた個人のiCloudアカウント経由で同期します。私たちは日記の内容を収集・閲覧・販売しません。<br><br>
+      <strong>サポート：</strong>アプリに関するご質問は <a href="mailto:howly7777777@gmail.com">howly7777777@gmail.com</a>（本ページが App Store のサポートURLです）。
+    </div>
+    <div class="disclaimer-box" lang-data="ko">
+      요약: Mind Upgrade는 일기를 기기에 저장하고, 개인 iCloud 계정으로 동기화합니다. 우리는 일기 내용을 수집·열람·판매하지 않습니다.<br><br>
+      <strong>지원:</strong> 앱 문의는 <a href="mailto:howly7777777@gmail.com">howly7777777@gmail.com</a> (이 페이지가 App Store 지원 URL입니다).
+    </div>
+    <div class="disclaimer-box" lang-data="es">
+      Resumen: Mind Upgrade guarda tu diario en tu dispositivo y lo sincroniza con tu cuenta personal de iCloud. No recopilamos, accedemos ni vendemos el contenido de tu diario.<br><br>
+      <strong>Soporte:</strong> para preguntas de la app, escribe a <a href="mailto:howly7777777@gmail.com">howly7777777@gmail.com</a> (esta página es la URL de soporte de App Store).
+    </div>
+    <div class="disclaimer-box" lang-data="pt-BR">
+      Resumo: o Mind Upgrade guarda o seu diário no dispositivo e sincroniza pela sua conta pessoal do iCloud. Não coletamos, acessamos nem vendemos o conteúdo do seu diário.<br><br>
+      <strong>Suporte:</strong> para dúvidas do app, envie um e-mail para <a href="mailto:howly7777777@gmail.com">howly7777777@gmail.com</a> (esta página é a URL de suporte da App Store).
     </div>
 
-    <h2 class="en">1. Who we are</h2>
-    <h2 class="zh">1. 我們是誰</h2>
-    <p class="en">Mind Upgrade (“the App”) is published by Howly (“we”, “us”). Contact: <a href="mailto:howly7777777@gmail.com">howly7777777@gmail.com</a></p>
-    <p class="zh">Mind Upgrade（「本 App」）由 Howly（「我們」）發行。聯絡：<a href="mailto:howly7777777@gmail.com">howly7777777@gmail.com</a></p>
+    <h2 lang-data="en">1. Who we are</h2>
+    <h2 lang-data="zh-Hant">1. 我們是誰</h2>
+    <h2 lang-data="zh-Hans">1. 我们是谁</h2>
+    <h2 lang-data="ja">1. 運営者</h2>
+    <h2 lang-data="ko">1. 운영자</h2>
+    <h2 lang-data="es">1. Quiénes somos</h2>
+    <h2 lang-data="pt-BR">1. Quem somos</h2>
+    <p lang-data="en">Mind Upgrade (“the App”) is published by Howly (“we”, “us”). Contact: <a href="mailto:howly7777777@gmail.com">howly7777777@gmail.com</a></p>
+    <p lang-data="zh-Hant">Mind Upgrade（「本 App」）由 Howly（「我們」）發行。聯絡：<a href="mailto:howly7777777@gmail.com">howly7777777@gmail.com</a></p>
+    <p lang-data="zh-Hans">Mind Upgrade（「本 App」）由 Howly（「我们」）发行。联络：<a href="mailto:howly7777777@gmail.com">howly7777777@gmail.com</a></p>
+    <p lang-data="ja">Mind Upgrade（「本アプリ」）は Howly（「当社」）が配信しています。連絡先：<a href="mailto:howly7777777@gmail.com">howly7777777@gmail.com</a></p>
+    <p lang-data="ko">Mind Upgrade(「본 앱」)는 Howly(「당사」)가 발행합니다. 연락처: <a href="mailto:howly7777777@gmail.com">howly7777777@gmail.com</a></p>
+    <p lang-data="es">Mind Upgrade («la App») es publicada por Howly («nosotros»). Contacto: <a href="mailto:howly7777777@gmail.com">howly7777777@gmail.com</a></p>
+    <p lang-data="pt-BR">O Mind Upgrade («o App») é publicado pela Howly («nós»). Contato: <a href="mailto:howly7777777@gmail.com">howly7777777@gmail.com</a></p>
 
-    <h2 class="en">2. What data we collect</h2>
-    <h2 class="zh">2. 我們收集什麼資料</h2>
-    <p class="en"><strong>We do not collect your journal content.</strong> Your gratitude entries, reviews, CBT notes, and mood check-ins are stored locally on your device and, if you are signed into iCloud, synced to your private iCloud database associated with your Apple ID.</p>
-    <p class="zh"><strong>我們不收集你的日記內容。</strong>你的感恩、復盤、CBT 記錄與心情 check-in 存在你的裝置上；若你已登入 iCloud，則同步至與 Apple ID 關聯的私有 iCloud 資料庫。</p>
-    <p class="en">We operate no backend servers for your journal. We cannot read your entries.</p>
-    <p class="zh">我們沒有針對日記內容的後端伺服器，無法讀取你的記錄。</p>
+    <h2 lang-data="en">2. What data we collect</h2>
+    <h2 lang-data="zh-Hant">2. 我們收集什麼資料</h2>
+    <h2 lang-data="zh-Hans">2. 我们收集什么资料</h2>
+    <h2 lang-data="ja">2. 収集するデータ</h2>
+    <h2 lang-data="ko">2. 수집하는 데이터</h2>
+    <h2 lang-data="es">2. Qué datos recopilamos</h2>
+    <h2 lang-data="pt-BR">2. Quais dados coletamos</h2>
+    <p lang-data="en"><strong>We do not collect your journal content.</strong> Your gratitude entries, reviews, CBT notes, and mood check-ins are stored locally on your device and, if you are signed into iCloud, synced to your private iCloud database associated with your Apple ID.</p>
+    <p lang-data="zh-Hant"><strong>我們不收集你的日記內容。</strong>你的感恩、復盤、CBT 記錄與心情 check-in 存在你的裝置上；若你已登入 iCloud，則同步至與 Apple ID 關聯的私有 iCloud 資料庫。</p>
+    <p lang-data="zh-Hans"><strong>我们不收集你的日记内容。</strong>你的感恩、复盘、CBT 记录与心情 check-in 存在你的设备上；若你已登录 iCloud，则同步至与 Apple ID 关联的私有 iCloud 数据库。</p>
+    <p lang-data="ja"><strong>日記の内容は収集しません。</strong>感謝、振り返り、CBTメモ、気分チェックインは端末に保存され、iCloudにサインインしている場合は、Apple IDに紐づくプライベートなiCloudデータベースへ同期されます。</p>
+    <p lang-data="ko"><strong>일기 내용은 수집하지 않습니다.</strong> 감사, 돌아보기, CBT 메모, 기분 체크인은 기기에 저장되며, iCloud에 로그인한 경우 Apple ID와 연결된 개인 iCloud 데이터베이스로 동기화됩니다.</p>
+    <p lang-data="es"><strong>No recopilamos el contenido de tu diario.</strong> Tus entradas de gratitud, repasos, notas CBT y check-ins de ánimo se guardan en tu dispositivo y, si usas iCloud, se sincronizan con tu base de datos privada de iCloud asociada a tu Apple ID.</p>
+    <p lang-data="pt-BR"><strong>Não coletamos o conteúdo do seu diário.</strong> Suas entradas de gratidão, revisões, notas de CBT e check-ins de humor ficam no dispositivo e, se você usa iCloud, sincronizam com o banco privado do iCloud associado ao seu Apple ID.</p>
+    <p lang-data="en">We operate no backend servers for your journal. We cannot read your entries.</p>
+    <p lang-data="zh-Hant">我們沒有針對日記內容的後端伺服器，無法讀取你的記錄。</p>
+    <p lang-data="zh-Hans">我们没有针对日记内容的后端服务器，无法读取你的记录。</p>
+    <p lang-data="ja">日記用の独自サーバーは運営していません。記録を読むことはできません。</p>
+    <p lang-data="ko">일기용 자체 서버를 운영하지 않으며, 기록을 읽을 수 없습니다.</p>
+    <p lang-data="es">No operamos servidores propios para tu diario. No podemos leer tus entradas.</p>
+    <p lang-data="pt-BR">Não operamos servidores próprios para o seu diário. Não podemos ler suas entradas.</p>
 
-    <h2 class="en">3. What Apple may process</h2>
-    <h2 class="zh">3. Apple 可能處理的項目</h2>
-    <ul class="en">
-      <li><strong>iCloud / CloudKit</strong> — sync and backup under your Apple ID ( governed by Apple’s privacy policy )</li>
+    <h2 lang-data="en">3. What Apple may process</h2>
+    <h2 lang-data="zh-Hant">3. Apple 可能處理的項目</h2>
+    <h2 lang-data="zh-Hans">3. Apple 可能处理的项目</h2>
+    <h2 lang-data="ja">3. Appleが処理しうる項目</h2>
+    <h2 lang-data="ko">3. Apple이 처리할 수 있는 항목</h2>
+    <h2 lang-data="es">3. Qué puede procesar Apple</h2>
+    <h2 lang-data="pt-BR">3. O que a Apple pode processar</h2>
+    <ul lang-data="en">
+      <li><strong>iCloud / CloudKit</strong> — sync and backup under your Apple ID (governed by Apple’s privacy policy)</li>
       <li><strong>App Store / In-App Purchase</strong> — Apple processes payment and purchase history</li>
-      <li><strong>Push notifications</strong> — bedtime reminders are scheduled locally; delivery uses Apple’s notification service</li>
+      <li><strong>Push notifications</strong> — morning and bedtime reminders are scheduled locally; delivery uses Apple’s notification service</li>
     </ul>
-    <ul class="zh">
+    <ul lang-data="zh-Hant">
       <li><strong>iCloud / CloudKit</strong> — 經 Apple ID 同步與備份（受 Apple 隱私政策規範）</li>
       <li><strong>App Store / 應用程式內購買</strong> — 由 Apple 處理付款與購買紀錄</li>
-      <li><strong>推播通知</strong> — 就寢提醒在本機排程；傳遞使用 Apple 通知服務</li>
+      <li><strong>推播通知</strong> — 早晨與就寢提醒在本機排程；傳遞使用 Apple 通知服務</li>
+    </ul>
+    <ul lang-data="zh-Hans">
+      <li><strong>iCloud / CloudKit</strong> — 经 Apple ID 同步与备份（受 Apple 隐私政策规范）</li>
+      <li><strong>App Store / 应用内购买</strong> — 由 Apple 处理付款与购买记录</li>
+      <li><strong>推送通知</strong> — 早晨与就寝提醒在本机排程；传递使用 Apple 通知服务</li>
+    </ul>
+    <ul lang-data="ja">
+      <li><strong>iCloud / CloudKit</strong> — Apple IDによる同期とバックアップ（Appleのプライバシーポリシーが適用）</li>
+      <li><strong>App Store / アプリ内課金</strong> — 決済と購入履歴はAppleが処理</li>
+      <li><strong>プッシュ通知</strong> — 朝と就寝前のリマインダーは端末で予約。配信はAppleの通知サービスを使用</li>
+    </ul>
+    <ul lang-data="ko">
+      <li><strong>iCloud / CloudKit</strong> — Apple ID로 동기화 및 백업(Apple 개인정보 처리방침 적용)</li>
+      <li><strong>App Store / 인앱 구매</strong> — 결제와 구매 기록은 Apple이 처리</li>
+      <li><strong>푸시 알림</strong> — 아침·잠자리 알림은 기기에서 예약되며, 전달은 Apple 알림 서비스를 사용</li>
+    </ul>
+    <ul lang-data="es">
+      <li><strong>iCloud / CloudKit</strong> — sincronización y copia de seguridad con tu Apple ID (política de privacidad de Apple)</li>
+      <li><strong>App Store / compras dentro de la app</strong> — Apple procesa el pago y el historial de compras</li>
+      <li><strong>Notificaciones push</strong> — los recordatorios de mañana y al acostarte se programan en el dispositivo; la entrega usa el servicio de Apple</li>
+    </ul>
+    <ul lang-data="pt-BR">
+      <li><strong>iCloud / CloudKit</strong> — sincronização e backup com o seu Apple ID (política de privacidade da Apple)</li>
+      <li><strong>App Store / compras no app</strong> — a Apple processa o pagamento e o histórico de compras</li>
+      <li><strong>Notificações push</strong> — os lembretes de manhã e na hora de dormir são agendados no dispositivo; a entrega usa o serviço da Apple</li>
     </ul>
 
-    <h2 class="en">4. What we do NOT do</h2>
-    <h2 class="zh">4. 我們不做的事</h2>
-    <ul class="en">
+    <h2 lang-data="en">4. What we do NOT do</h2>
+    <h2 lang-data="zh-Hant">4. 我們不做的事</h2>
+    <h2 lang-data="zh-Hans">4. 我们不做的事</h2>
+    <h2 lang-data="ja">4. 行わないこと</h2>
+    <h2 lang-data="ko">4. 하지 않는 일</h2>
+    <h2 lang-data="es">4. Lo que NO hacemos</h2>
+    <h2 lang-data="pt-BR">4. O que NÃO fazemos</h2>
+    <ul lang-data="en">
       <li>No AI analysis of your journal</li>
       <li>No selling or sharing of personal data with advertisers</li>
       <li>No third-party analytics SDKs tracking your entries</li>
       <li>No account system on our servers</li>
     </ul>
-    <ul class="zh">
+    <ul lang-data="zh-Hant">
       <li>不用 AI 分析你的日記</li>
       <li>不向廣告商出售或分享個人資料</li>
       <li>不使用第三方分析 SDK 追蹤日記內容</li>
       <li>不在我們伺服器上建立帳號系統</li>
     </ul>
+    <ul lang-data="zh-Hans">
+      <li>不用 AI 分析你的日记</li>
+      <li>不向广告商出售或分享个人资料</li>
+      <li>不使用第三方分析 SDK 追踪日记内容</li>
+      <li>不在我们服务器上建立账号系统</li>
+    </ul>
+    <ul lang-data="ja">
+      <li>日記をAIで分析しない</li>
+      <li>広告主への個人データの販売・共有をしない</li>
+      <li>日記を追跡する第三者アナリティクスSDKを使わない</li>
+      <li>当社サーバー上のアカウントシステムはない</li>
+    </ul>
+    <ul lang-data="ko">
+      <li>일기를 AI로 분석하지 않음</li>
+      <li>광고주에게 개인정보를 판매·공유하지 않음</li>
+      <li>일기를 추적하는 제3자 분석 SDK를 쓰지 않음</li>
+      <li>당사 서버에 계정 시스템을 두지 않음</li>
+    </ul>
+    <ul lang-data="es">
+      <li>Sin análisis de IA de tu diario</li>
+      <li>No vendemos ni compartimos datos personales con anunciantes</li>
+      <li>Sin SDK de analítica de terceros sobre tus entradas</li>
+      <li>Sin cuentas en nuestros servidores</li>
+    </ul>
+    <ul lang-data="pt-BR">
+      <li>Sem análise de IA do seu diário</li>
+      <li>Não vendemos nem compartilhamos dados pessoais com anunciantes</li>
+      <li>Sem SDKs de analytics de terceiros nas suas entradas</li>
+      <li>Sem contas nos nossos servidores</li>
+    </ul>
 
-    <h2 class="en">5. Data retention &amp; deletion</h2>
-    <h2 class="zh">5. 資料保留與刪除</h2>
-    <p class="en">You control your data. Delete the App to remove local copies. To remove iCloud copies, delete the App data from your iCloud storage or sign out of iCloud on the device. Purchases can be restored via Apple’s “Restore Purchases.”</p>
-    <p class="zh">資料由你掌控。刪除 App 可移除本機副本。若要移除 iCloud 副本，請從 iCloud 儲存空間刪除 App 資料，或在裝置登出 iCloud。購買可透過 Apple「恢復購買」還原。</p>
+    <h2 lang-data="en">5. Data retention &amp; deletion</h2>
+    <h2 lang-data="zh-Hant">5. 資料保留與刪除</h2>
+    <h2 lang-data="zh-Hans">5. 资料保留与删除</h2>
+    <h2 lang-data="ja">5. データの保持と削除</h2>
+    <h2 lang-data="ko">5. 데이터 보관 및 삭제</h2>
+    <h2 lang-data="es">5. Conservación y eliminación</h2>
+    <h2 lang-data="pt-BR">5. Retenção e exclusão</h2>
+    <p lang-data="en">You control your data. Delete the App to remove local copies. To remove iCloud copies, delete the App data from your iCloud storage or sign out of iCloud on the device. Purchases can be restored via Apple’s “Restore Purchases.”</p>
+    <p lang-data="zh-Hant">資料由你掌控。刪除 App 可移除本機副本。若要移除 iCloud 副本，請從 iCloud 儲存空間刪除 App 資料，或在裝置登出 iCloud。購買可透過 Apple「恢復購買」還原。</p>
+    <p lang-data="zh-Hans">资料由你掌控。删除 App 可移除本机副本。若要移除 iCloud 副本，请从 iCloud 存储空间删除 App 资料，或在设备退出 iCloud。购买可通过 Apple「恢复购买」还原。</p>
+    <p lang-data="ja">データはあなたが管理します。アプリを削除すると端末上のコピーが消えます。iCloud上のコピーを消すには、iCloudストレージからアプリデータを削除するか、端末でiCloudからサインアウトしてください。購入はAppleの「購入を復元」で復元できます。</p>
+    <p lang-data="ko">데이터는 당신이 통제합니다. 앱을 삭제하면 기기의 사본이 제거됩니다. iCloud 사본을 지우려면 iCloud 저장 공간에서 앱 데이터를 삭제하거나 기기에서 iCloud에서 로그아웃하세요. 구매는 Apple의 “구입 항목 복원”으로 복원할 수 있습니다.</p>
+    <p lang-data="es">Tú controlas tus datos. Borra la app para quitar copias locales. Para quitar copias de iCloud, elimina los datos de la app en el almacenamiento de iCloud o cierra sesión de iCloud. Las compras se restauran con «Restaurar compras» de Apple.</p>
+    <p lang-data="pt-BR">Você controla seus dados. Apague o app para remover cópias locais. Para remover cópias do iCloud, exclua os dados do app no armazenamento do iCloud ou saia do iCloud. As compras podem ser restauradas com “Restaurar compras” da Apple.</p>
 
-    <h2 class="en">6. Children’s privacy</h2>
-    <h2 class="zh">6. 兒童隱私</h2>
-    <p class="en">The App is not directed at children under 13. We do not knowingly collect personal information from children.</p>
-    <p class="zh">本 App 不針對 13 歲以下兒童。我們不會故意收集兒童個人資料。</p>
+    <h2 lang-data="en">6. Children’s privacy</h2>
+    <h2 lang-data="zh-Hant">6. 兒童隱私</h2>
+    <h2 lang-data="zh-Hans">6. 儿童隐私</h2>
+    <h2 lang-data="ja">6. お子さまのプライバシー</h2>
+    <h2 lang-data="ko">6. 아동 개인정보</h2>
+    <h2 lang-data="es">6. Privacidad de menores</h2>
+    <h2 lang-data="pt-BR">6. Privacidade de crianças</h2>
+    <p lang-data="en">The App is not directed at children under 13. We do not knowingly collect personal information from children.</p>
+    <p lang-data="zh-Hant">本 App 不針對 13 歲以下兒童。我們不會故意收集兒童個人資料。</p>
+    <p lang-data="zh-Hans">本 App 不针对 13 岁以下儿童。我们不会故意收集儿童个人资料。</p>
+    <p lang-data="ja">本アプリは13歳未満のお子さまを対象としていません。児童から故意に個人情報を収集することはありません。</p>
+    <p lang-data="ko">본 앱은 13세 미만 아동을 대상으로 하지 않습니다. 아동의 개인정보를 고의로 수집하지 않습니다.</p>
+    <p lang-data="es">La App no está dirigida a menores de 13 años. No recopilamos a sabiendas información personal de niños.</p>
+    <p lang-data="pt-BR">O App não é direcionado a menores de 13 anos. Não coletamos intencionalmente informações pessoais de crianças.</p>
 
-    <h2 class="en">7. Changes</h2>
-    <h2 class="zh">7. 政策變更</h2>
-    <p class="en">We may update this policy. The “Last updated” date will change. Continued use after changes means acceptance.</p>
-    <p class="zh">我們可能更新本政策，「最後更新」日期將随之變更。變更後繼續使用即表示接受。</p>
+    <h2 lang-data="en">7. Changes</h2>
+    <h2 lang-data="zh-Hant">7. 政策變更</h2>
+    <h2 lang-data="zh-Hans">7. 政策变更</h2>
+    <h2 lang-data="ja">7. 変更</h2>
+    <h2 lang-data="ko">7. 변경</h2>
+    <h2 lang-data="es">7. Cambios</h2>
+    <h2 lang-data="pt-BR">7. Alterações</h2>
+    <p lang-data="en">We may update this policy. The “Last updated” date will change. Continued use after changes means acceptance.</p>
+    <p lang-data="zh-Hant">我們可能更新本政策，「最後更新」日期將隨之變更。變更後繼續使用即表示接受。</p>
+    <p lang-data="zh-Hans">我们可能更新本政策，「最后更新」日期将随之变更。变更后继续使用即表示接受。</p>
+    <p lang-data="ja">本ポリシーは更新されることがあります。「最終更新」日が変わります。変更後の継続利用は同意を意味します。</p>
+    <p lang-data="ko">본 방침은 업데이트될 수 있으며 「최종 업데이트」 날짜가 바뀝니다. 변경 후 계속 사용하면 동의한 것으로 봅니다.</p>
+    <p lang-data="es">Podemos actualizar esta política. Cambiará la fecha de «Última actualización». Seguir usando la app implica aceptación.</p>
+    <p lang-data="pt-BR">Podemos atualizar esta política. A data de “Última atualização” mudará. Continuar usando o app implica aceitação.</p>
 
-    <h2 class="en">8. Contact</h2>
-    <h2 class="zh">8. 聯絡我們</h2>
-    <p class="en">Questions: <a href="mailto:howly7777777@gmail.com">howly7777777@gmail.com</a></p>
-    <p class="zh">問題請寄：<a href="mailto:howly7777777@gmail.com">howly7777777@gmail.com</a></p>
+    <h2 lang-data="en">8. Contact</h2>
+    <h2 lang-data="zh-Hant">8. 聯絡我們</h2>
+    <h2 lang-data="zh-Hans">8. 联络我们</h2>
+    <h2 lang-data="ja">8. お問い合わせ</h2>
+    <h2 lang-data="ko">8. 문의</h2>
+    <h2 lang-data="es">8. Contacto</h2>
+    <h2 lang-data="pt-BR">8. Contato</h2>
+    <p lang-data="en">Questions: <a href="mailto:howly7777777@gmail.com">howly7777777@gmail.com</a></p>
+    <p lang-data="zh-Hant">問題請寄：<a href="mailto:howly7777777@gmail.com">howly7777777@gmail.com</a></p>
+    <p lang-data="zh-Hans">问题请寄：<a href="mailto:howly7777777@gmail.com">howly7777777@gmail.com</a></p>
+    <p lang-data="ja">ご質問：<a href="mailto:howly7777777@gmail.com">howly7777777@gmail.com</a></p>
+    <p lang-data="ko">문의: <a href="mailto:howly7777777@gmail.com">howly7777777@gmail.com</a></p>
+    <p lang-data="es">Preguntas: <a href="mailto:howly7777777@gmail.com">howly7777777@gmail.com</a></p>
+    <p lang-data="pt-BR">Dúvidas: <a href="mailto:howly7777777@gmail.com">howly7777777@gmail.com</a></p>
 
     <div class="links-row" style="margin-top: 2rem;">
-      <a class="btn btn-secondary" href="index.html">← Home</a>
-      <a class="btn btn-secondary en" href="eula.html">Terms of Use</a>
-      <a class="btn btn-secondary zh" href="eula.html">使用條款</a>
+      <a class="btn btn-secondary" href="index.html">
+        <span lang-data="en">← Home</span>
+        <span lang-data="zh-Hant">← 首頁</span>
+        <span lang-data="zh-Hans">← 首页</span>
+        <span lang-data="ja">← ホーム</span>
+        <span lang-data="ko">← 홈</span>
+        <span lang-data="es">← Inicio</span>
+        <span lang-data="pt-BR">← Início</span>
+      </a>
+      <a class="btn btn-secondary" href="eula.html">
+        <span lang-data="en">Terms of Use</span>
+        <span lang-data="zh-Hant">使用條款</span>
+        <span lang-data="zh-Hans">使用条款</span>
+        <span lang-data="ja">利用規約</span>
+        <span lang-data="ko">이용 약관</span>
+        <span lang-data="es">Términos de uso</span>
+        <span lang-data="pt-BR">Termos de uso</span>
+      </a>
     </div>
   </main>
 

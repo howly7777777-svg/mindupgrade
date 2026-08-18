@@ -14,94 +14,269 @@
       <img src="assets/apple-touch-icon.png" alt="" width="36" height="36">
       Mind Upgrade
     </a>
-    <div class="lang-toggle">
-      <button type="button" data-lang="en" class="active">EN</button>
-      <button type="button" data-lang="zh-Hant">中文</button>
-    </div>
+    <select class="lang-selector" onchange="changeLanguage(this.value)" aria-label="Language">
+      <option value="en">English</option>
+      <option value="zh-Hant">繁體中文</option>
+      <option value="zh-Hans">简体中文</option>
+      <option value="ja">日本語</option>
+      <option value="ko">한국어</option>
+      <option value="es">Español</option>
+      <option value="pt-BR">Português (Brasil)</option>
+    </select>
   </header>
 
   <main class="legal">
-    <h1 class="en">Terms of Use (EULA)</h1>
-    <h1 class="zh">使用條款 (EULA)</h1>
-    <p class="updated en">Last updated: June 11, 2026</p>
-    <p class="updated zh">最後更新：2026 年 6 月 11 日</p>
+    <h1 lang-data="en">Terms of Use (EULA)</h1>
+    <h1 lang-data="zh-Hant">使用條款 (EULA)</h1>
+    <h1 lang-data="zh-Hans">使用条款 (EULA)</h1>
+    <h1 lang-data="ja">利用規約 (EULA)</h1>
+    <h1 lang-data="ko">이용 약관 (EULA)</h1>
+    <h1 lang-data="es">Términos de uso (EULA)</h1>
+    <h1 lang-data="pt-BR">Termos de uso (EULA)</h1>
 
-    <p class="en">Please read these Terms of Use (“Terms”) before using Mind Upgrade (“the App”). By downloading or using the App, you agree to these Terms.</p>
-    <p class="zh">使用 Mind Upgrade（「本 App」）前請閱讀本使用條款（「條款」）。下載或使用即表示你同意本條款。</p>
+    <p class="updated" lang-data="en">Last updated: August 18, 2026</p>
+    <p class="updated" lang-data="zh-Hant">最後更新：2026 年 8 月 18 日</p>
+    <p class="updated" lang-data="zh-Hans">最后更新：2026 年 8 月 18 日</p>
+    <p class="updated" lang-data="ja">最終更新：2026年8月18日</p>
+    <p class="updated" lang-data="ko">최종 업데이트: 2026년 8월 18일</p>
+    <p class="updated" lang-data="es">Última actualización: 18 de agosto de 2026</p>
+    <p class="updated" lang-data="pt-BR">Última atualização: 18 de agosto de 2026</p>
 
-    <h2 class="en">1. License</h2>
-    <h2 class="zh">1. 授權</h2>
-    <p class="en">We grant you a personal, non-exclusive, non-transferable license to use the App on Apple devices you own or control, subject to the Apple Media Services Terms and these Terms.</p>
-    <p class="zh">我們授予你在所擁有或控制的 Apple 裝置上個人、非專屬、不可轉讓的使用授權，並受 Apple 媒體服務條款及本條款約束。</p>
+    <p lang-data="en">Please read these Terms of Use (“Terms”) before using Mind Upgrade (“the App”). By downloading or using the App, you agree to these Terms.</p>
+    <p lang-data="zh-Hant">使用 Mind Upgrade（「本 App」）前請閱讀本使用條款（「條款」）。下載或使用即表示你同意本條款。</p>
+    <p lang-data="zh-Hans">使用 Mind Upgrade（「本 App」）前请阅读本使用条款（「条款」）。下载或使用即表示你同意本条款。</p>
+    <p lang-data="ja">Mind Upgrade（「本アプリ」）をご利用になる前に、本利用規約（「本規約」）をお読みください。ダウンロードまたは利用により、本規約に同意したものとみなされます。</p>
+    <p lang-data="ko">Mind Upgrade(「본 앱」)를 사용하기 전에 본 이용 약관(「약관」)을 읽어 주세요. 다운로드하거나 사용하면 약관에 동의한 것으로 봅니다.</p>
+    <p lang-data="es">Lee estos Términos de uso («Términos») antes de usar Mind Upgrade («la App»). Al descargar o usar la App, aceptas estos Términos.</p>
+    <p lang-data="pt-BR">Leia estes Termos de uso («Termos») antes de usar o Mind Upgrade («o App»). Ao baixar ou usar o App, você concorda com estes Termos.</p>
 
-    <h2 class="en">2. Purchases &amp; trial</h2>
-    <h2 class="zh">2. 購買與試用</h2>
-    <ul class="en">
-      <li>The App may offer a <strong>7-day free trial</strong> via a $0 in-app purchase, followed by optional <strong>lifetime unlock</strong> (one-time fee, currently $14.99 USD unless changed).</li>
-      <li>There is <strong>no subscription</strong> and <strong>no automatic renewal</strong> after the trial.</li>
-      <li>After the trial, you may read past entries; creating new entries requires lifetime unlock.</li>
-      <li>All payments are processed by Apple. Refunds follow Apple’s policies.</li>
+    <h2 lang-data="en">1. License</h2>
+    <h2 lang-data="zh-Hant">1. 授權</h2>
+    <h2 lang-data="zh-Hans">1. 授权</h2>
+    <h2 lang-data="ja">1. ライセンス</h2>
+    <h2 lang-data="ko">1. 라이선스</h2>
+    <h2 lang-data="es">1. Licencia</h2>
+    <h2 lang-data="pt-BR">1. Licença</h2>
+    <p lang-data="en">We grant you a personal, non-exclusive, non-transferable license to use the App on Apple devices you own or control, subject to the Apple Media Services Terms and these Terms.</p>
+    <p lang-data="zh-Hant">我們授予你在所擁有或控制的 Apple 裝置上個人、非專屬、不可轉讓的使用授權，並受 Apple 媒體服務條款及本條款約束。</p>
+    <p lang-data="zh-Hans">我们授予你在所拥有或控制的 Apple 设备上个人、非专属、不可转让的使用授权，并受 Apple 媒体服务条款及本条款约束。</p>
+    <p lang-data="ja">当社は、お客様が所有または管理するApple端末上で本アプリを利用するための、個人的・非独占的・譲渡不可のライセンスを付与します。Appleメディアサービスの利用規約および本規約が適用されます。</p>
+    <p lang-data="ko">당사는 당신이 소유하거나 관리하는 Apple 기기에서 본 앱을 사용할 개인적·비독점·양도 불가 라이선스를 부여합니다. Apple 미디어 서비스 약관과 본 약관이 적용됩니다.</p>
+    <p lang-data="es">Te otorgamos una licencia personal, no exclusiva e intransferible para usar la App en dispositivos Apple que poseas o controles, sujeta a los Términos de los servicios de medios de Apple y a estos Términos.</p>
+    <p lang-data="pt-BR">Concedemos a você uma licença pessoal, não exclusiva e intransferível para usar o App em dispositivos Apple que você possua ou controle, sujeita aos Termos dos Serviços de Mídia da Apple e a estes Termos.</p>
+
+    <h2 lang-data="en">2. Purchases</h2>
+    <h2 lang-data="zh-Hant">2. 購買</h2>
+    <h2 lang-data="zh-Hans">2. 购买</h2>
+    <h2 lang-data="ja">2. 購入</h2>
+    <h2 lang-data="ko">2. 구매</h2>
+    <h2 lang-data="es">2. Compras</h2>
+    <h2 lang-data="pt-BR">2. Compras</h2>
+    <ul lang-data="en">
+      <li>The App may offer a <strong>yearly subscription</strong> (currently $5.69 USD/year unless changed in the App). It auto-renews unless you cancel at least 24 hours before the period ends. New subscribers may receive a 1-month free trial, then billed at the annual price shown in the App.</li>
+      <li>The App may also offer a <strong>lifetime unlock</strong> (one-time fee, currently $14.99 USD unless changed). No subscription. No auto-renewal.</li>
+      <li>Both plans include Family Sharing. If a subscription ends, past entries stay readable; creating new sessions requires an active plan or lifetime unlock.</li>
+      <li>All payments are processed by Apple. Manage subscriptions in Settings → Apple ID → Subscriptions. Refunds follow Apple’s policies.</li>
     </ul>
-    <ul class="zh">
-      <li>本 App 可透過 $0 應用程式內購買提供 <strong>7 天免費試用</strong>，之後可選 <strong>永久解鎖</strong>（一次性費用，目前為 $14.99 USD，若有調整以 App 內為準）。</li>
-      <li><strong>無訂閱</strong>，試用期後<strong>不會自動續訂</strong>。</li>
-      <li>試用結束後仍可閱讀過去記錄；新增記錄需永久解鎖。</li>
-      <li>所有付款由 Apple 處理，退款依 Apple 政策。</li>
+    <ul lang-data="zh-Hant">
+      <li>本 App 可提供<strong>年訂閱</strong>（目前每年 $5.69 USD，若有調整以 App 內為準）。除非於期間結束前至少 24 小時取消，否則自動續訂。新訂閱用戶可能享有 1 個月免費試用，之後依 App 內顯示之年費計費。</li>
+      <li>亦可選<strong>永久解鎖</strong>（一次性費用，目前為 $14.99 USD，若有調整以 App 內為準）。無訂閱、不自動續訂。</li>
+      <li>兩種方案均支援家人共享。訂閱結束後仍可閱讀過去記錄；新增 session 需有效訂閱或永久版。</li>
+      <li>所有付款由 Apple 處理。可於「設定 → Apple ID → 訂閱項目」管理。退款依 Apple 政策。</li>
+    </ul>
+    <ul lang-data="zh-Hans">
+      <li>本 App 可提供<strong>年订阅</strong>（目前每年 $5.69 USD，若有调整以 App 内为准）。除非于期间结束前至少 24 小时取消，否则自动续订。新订阅用户可能享有 1 个月免费试用，之后依 App 内显示之年费计费。</li>
+      <li>亦可选<strong>永久解锁</strong>（一次性费用，目前为 $14.99 USD，若有调整以 App 内为准）。无订阅、不自动续订。</li>
+      <li>两种方案均支持家人共享。订阅结束后仍可阅读过去记录；新增 session 需有效订阅或永久版。</li>
+      <li>所有付款由 Apple 处理。可于「设置 → Apple ID → 订阅」管理。退款依 Apple 政策。</li>
+    </ul>
+    <ul lang-data="ja">
+      <li>本アプリは<strong>年間サブスクリプション</strong>（現在 $5.69 USD/年。アプリ内表示が優先）を提供する場合があります。期間終了の24時間前までに解約しない限り自動更新されます。新規登録者は1か月無料トライアルの対象となる場合があり、その後アプリ内表示の年額で請求されます。</li>
+      <li><strong>永久アンロック</strong>（買い切り、現在 $14.99 USD。アプリ内表示が優先）も提供する場合があります。サブスクなし、自動更新なし。</li>
+      <li>どちらのプランもファミリー共有に対応します。サブスク終了後も過去の記録は読めます。新しいセッションには有効なプランまたは永久版が必要です。</li>
+      <li>支払いはすべてAppleが処理します。「設定 → Apple ID → サブスクリプション」で管理できます。返金はAppleの方針に従います。</li>
+    </ul>
+    <ul lang-data="ko">
+      <li>본 앱은 <strong>연간 구독</strong>(현재 $5.69 USD/년, 앱 표시가 우선)을 제공할 수 있습니다. 기간 종료 최소 24시간 전에 취소하지 않으면 자동 갱신됩니다. 신규 구독자는 1개월 무료 체험 대상일 수 있으며, 이후 앱에 표시된 연 요금이 청구됩니다.</li>
+      <li><strong>평생 잠금 해제</strong>(일회성, 현재 $14.99 USD, 앱 표시가 우선)도 제공할 수 있습니다. 구독 없음, 자동 갱신 없음.</li>
+      <li>두 플랜 모두 가족 공유가 포함됩니다. 구독이 끝나도 지난 기록은 읽을 수 있습니다. 새 세션을 쓰려면 유효한 플랜 또는 평생 버전이 필요합니다.</li>
+      <li>결제는 모두 Apple이 처리합니다. 「설정 → Apple ID → 구독」에서 관리하세요. 환불은 Apple 정책을 따릅니다.</li>
+    </ul>
+    <ul lang-data="es">
+      <li>La App puede ofrecer una <strong>suscripción anual</strong> (actualmente $5.69 USD/año, salvo cambio en la App). Se renueva automáticamente salvo que canceles al menos 24 horas antes del fin del período. Los nuevos suscriptores pueden recibir 1 mes de prueba gratis y luego se cobra el precio anual mostrado en la App.</li>
+      <li>También puede ofrecer un <strong>desbloqueo de por vida</strong> (pago único, actualmente $14.99 USD, salvo cambio). Sin suscripción. Sin renovación automática.</li>
+      <li>Ambos planes incluyen En familia. Si termina la suscripción, las entradas anteriores siguen visibles; para nuevas sesiones hace falta un plan activo o el desbloqueo de por vida.</li>
+      <li>Apple procesa todos los pagos. Adminístralo en Ajustes → Apple ID → Suscripciones. Los reembolsos siguen las políticas de Apple.</li>
+    </ul>
+    <ul lang-data="pt-BR">
+      <li>O App pode oferecer uma <strong>assinatura anual</strong> (atualmente $5.69 USD/ano, salvo alteração no App). Renova automaticamente a menos que você cancele pelo menos 24 horas antes do fim do período. Novos assinantes podem receber 1 mês grátis e depois são cobrados no preço anual mostrado no App.</li>
+      <li>Também pode oferecer um <strong>desbloqueio vitalício</strong> (pagamento único, atualmente $14.99 USD, salvo alteração). Sem assinatura. Sem renovação automática.</li>
+      <li>Os dois planos incluem Compartilhamento Familiar. Se a assinatura terminar, as entradas anteriores continuam visíveis; novas sessões exigem um plano ativo ou o desbloqueio vitalício.</li>
+      <li>A Apple processa todos os pagamentos. Gerencie em Ajustes → Apple ID → Assinaturas. Reembolsos seguem as políticas da Apple.</li>
     </ul>
 
-    <h2 class="en">3. Your content</h2>
-    <h2 class="zh">3. 你的內容</h2>
-    <p class="en">You retain ownership of journal entries you create. You are responsible for your content and for maintaining backups (including iCloud). We do not access your entries.</p>
-    <p class="zh">你保留所創建日記內容的所有權。你須對內容負責並自行備份（含 iCloud）。我們不存取你的記錄。</p>
+    <h2 lang-data="en">3. Your content</h2>
+    <h2 lang-data="zh-Hant">3. 你的內容</h2>
+    <h2 lang-data="zh-Hans">3. 你的内容</h2>
+    <h2 lang-data="ja">3. あなたのコンテンツ</h2>
+    <h2 lang-data="ko">3. 당신의 콘텐츠</h2>
+    <h2 lang-data="es">3. Tu contenido</h2>
+    <h2 lang-data="pt-BR">3. Seu conteúdo</h2>
+    <p lang-data="en">You retain ownership of journal entries you create. You are responsible for your content and for maintaining backups (including iCloud). We do not access your entries.</p>
+    <p lang-data="zh-Hant">你保留所創建日記內容的所有權。你須對內容負責並自行備份（含 iCloud）。我們不存取你的記錄。</p>
+    <p lang-data="zh-Hans">你保留所创建日记内容的所有权。你须对内容负责并自行备份（含 iCloud）。我们不访问你的记录。</p>
+    <p lang-data="ja">作成した日記の所有権はお客様にあります。内容とバックアップ（iCloudを含む）はお客様の責任です。当社は記録にアクセスしません。</p>
+    <p lang-data="ko">작성한 일기의 소유권은 당신에게 있습니다. 콘텐츠와 백업(iCloud 포함)은 당신의 책임입니다. 당사는 기록에 접근하지 않습니다.</p>
+    <p lang-data="es">Conservas la titularidad de las entradas que creas. Eres responsable de tu contenido y de las copias de seguridad (incluido iCloud). No accedemos a tus entradas.</p>
+    <p lang-data="pt-BR">Você conserva a titularidade das entradas que cria. Você é responsável pelo conteúdo e pelos backups (incluindo iCloud). Não acessamos suas entradas.</p>
 
-    <h2 class="en">4. Not medical advice</h2>
-    <h2 class="zh">4. 非醫療建議</h2>
-    <div class="disclaimer-box en">
+    <h2 lang-data="en">4. Not medical advice</h2>
+    <h2 lang-data="zh-Hant">4. 非醫療建議</h2>
+    <h2 lang-data="zh-Hans">4. 非医疗建议</h2>
+    <h2 lang-data="ja">4. 医療アドバイスではない</h2>
+    <h2 lang-data="ko">4. 의료 조언이 아님</h2>
+    <h2 lang-data="es">4. No es consejo médico</h2>
+    <h2 lang-data="pt-BR">4. Não é conselho médico</h2>
+    <div class="disclaimer-box" lang-data="en">
       The App provides self-reflection tools inspired by positive psychology and CBT practices. It does <strong>not</strong> provide medical advice, diagnosis, or treatment. Always seek qualified professionals for mental health concerns. In an emergency, contact local emergency services.
     </div>
-    <div class="disclaimer-box zh">
+    <div class="disclaimer-box" lang-data="zh-Hant">
       本 App 提供受正向心理學與 CBT 練習啟發的自我反思工具，<strong>不提供</strong>醫療建議、診斷或治療。心理健康問題請尋求合格專業人員。緊急情況請聯絡當地緊急服務。
     </div>
+    <div class="disclaimer-box" lang-data="zh-Hans">
+      本 App 提供受积极心理学与 CBT 练习启发的自我反思工具，<strong>不提供</strong>医疗建议、诊断或治疗。心理健康问题请寻求合格专业人员。紧急情况请联系当地紧急服务。
+    </div>
+    <div class="disclaimer-box" lang-data="ja">
+      本アプリはポジティブ心理学とCBTの実践に着想した自己内省ツールであり、医療アドバイス・診断・治療は<strong>行いません</strong>。メンタルヘルスの問題は資格ある専門家にご相談ください。緊急時は地域の救急サービスへ。
+    </div>
+    <div class="disclaimer-box" lang-data="ko">
+      본 앱은 긍정심리학과 CBT 연습에서 영감을 받은 자기 성찰 도구이며, 의료 조언·진단·치료를 <strong>제공하지 않습니다</strong>. 정신건강 문제는 자격을 갖춘 전문가에게 문의하세요. 응급 시 지역 응급 서비스에 연락하세요.
+    </div>
+    <div class="disclaimer-box" lang-data="es">
+      La App ofrece herramientas de autorreflexión inspiradas en la psicología positiva y prácticas CBT. <strong>No</strong> da consejo médico, diagnóstico ni tratamiento. Busca profesionales cualificados para la salud mental. En una emergencia, contacta los servicios locales.
+    </div>
+    <div class="disclaimer-box" lang-data="pt-BR">
+      O App oferece ferramentas de autorreflexão inspiradas na psicologia positiva e em práticas de CBT. <strong>Não</strong> fornece conselho médico, diagnóstico ou tratamento. Procure profissionais qualificados para saúde mental. Em emergência, contate os serviços locais.
+    </div>
 
-    <h2 class="en">5. Research library</h2>
-    <h2 class="zh">5. 研究資料庫</h2>
-    <p class="en">Research summaries are for educational purposes only. The App is not affiliated with Harvard University or any institution cited. Citations link to third-party sources.</p>
-    <p class="zh">研究摘要僅供教育用途。本 App 與 Harvard University 或任何被引用機構無關。引用連結至第三方來源。</p>
+    <h2 lang-data="en">5. Research library</h2>
+    <h2 lang-data="zh-Hant">5. 研究資料庫</h2>
+    <h2 lang-data="zh-Hans">5. 研究资料库</h2>
+    <h2 lang-data="ja">5. 研究ライブラリ</h2>
+    <h2 lang-data="ko">5. 연구 라이브러리</h2>
+    <h2 lang-data="es">5. Biblioteca de investigación</h2>
+    <h2 lang-data="pt-BR">5. Biblioteca de pesquisa</h2>
+    <p lang-data="en">Research summaries are for educational purposes only. The App is not affiliated with any university or institution cited. Citations link to third-party sources.</p>
+    <p lang-data="zh-Hant">研究摘要僅供教育用途。本 App 與任何被引用的大學或機構無關。引用連結至第三方來源。</p>
+    <p lang-data="zh-Hans">研究摘要仅供教育用途。本 App 与任何被引用的大学或机构无关。引用链接至第三方来源。</p>
+    <p lang-data="ja">研究要約は教育目的のみです。本アプリは引用する大学・機関と提携していません。引用は第三者の情報源へリンクします。</p>
+    <p lang-data="ko">연구 요약은 교육 목적만입니다. 본 앱은 인용된 대학·기관과 제휴하지 않습니다. 인용은 제3자 출처로 연결됩니다.</p>
+    <p lang-data="es">Los resúmenes de investigación son solo educativos. La App no está afiliada a ninguna universidad o institución citada. Las citas enlazan a fuentes de terceros.</p>
+    <p lang-data="pt-BR">Os resumos de pesquisa são apenas educativos. O App não tem vínculo com nenhuma universidade ou instituição citada. As citações levam a fontes de terceiros.</p>
 
-    <h2 class="en">6. Acceptable use</h2>
-    <h2 class="zh">6. 可接受使用</h2>
-    <p class="en">You may not reverse-engineer, redistribute, or use the App unlawfully. You may not attempt to access other users’ data (not applicable — we hold no user data on our servers).</p>
-    <p class="zh">不得逆向工程、再散布或違法使用本 App。不得試圖存取他人資料（我們伺服器不存放用戶資料，此條仍適用於一般禁止行為）。</p>
+    <h2 lang-data="en">6. Acceptable use</h2>
+    <h2 lang-data="zh-Hant">6. 可接受使用</h2>
+    <h2 lang-data="zh-Hans">6. 可接受使用</h2>
+    <h2 lang-data="ja">6. 利用上の制限</h2>
+    <h2 lang-data="ko">6. 허용되는 사용</h2>
+    <h2 lang-data="es">6. Uso aceptable</h2>
+    <h2 lang-data="pt-BR">6. Uso aceitável</h2>
+    <p lang-data="en">You may not reverse-engineer, redistribute, or use the App unlawfully. You may not attempt to access other users’ data (not applicable — we hold no user data on our servers).</p>
+    <p lang-data="zh-Hant">不得逆向工程、再散布或違法使用本 App。不得試圖存取他人資料（我們伺服器不存放用戶資料，此條仍適用於一般禁止行為）。</p>
+    <p lang-data="zh-Hans">不得逆向工程、再散布或违法使用本 App。不得试图访问他人资料（我们服务器不存放用户资料，此条仍适用于一般禁止行为）。</p>
+    <p lang-data="ja">リバースエンジニアリング、再配布、違法な利用は禁止です。他者のデータへのアクセス試行も禁止です（当社サーバーにユーザーデータはありません）。</p>
+    <p lang-data="ko">리버스 엔지니어링, 재배포, 불법 사용을 금지합니다. 다른 사용자 데이터에 접근하려 해서는 안 됩니다(당사 서버에 사용자 데이터를 두지 않습니다).</p>
+    <p lang-data="es">No puedes hacer ingeniería inversa, redistribuir ni usar la App de forma ilegal. No intentes acceder a datos de otros (no aplica: no guardamos datos de usuarios en nuestros servidores).</p>
+    <p lang-data="pt-BR">Você não pode fazer engenharia reversa, redistribuir nem usar o App de forma ilegal. Não tente acessar dados de outras pessoas (não se aplica: não guardamos dados de usuários em nossos servidores).</p>
 
-    <h2 class="en">7. Disclaimer of warranties</h2>
-    <h2 class="zh">7. 免責聲明</h2>
-    <p class="en">The App is provided “as is” without warranties of any kind. We do not guarantee uninterrupted sync, error-free operation, or specific wellness outcomes.</p>
-    <p class="zh">本 App 按「現狀」提供，不作任何保證。我們不保證同步不中断、無錯誤運作或特定成效。</p>
+    <h2 lang-data="en">7. Disclaimer of warranties</h2>
+    <h2 lang-data="zh-Hant">7. 免責聲明</h2>
+    <h2 lang-data="zh-Hans">7. 免责声明</h2>
+    <h2 lang-data="ja">7. 保証の否認</h2>
+    <h2 lang-data="ko">7. 보증 부인</h2>
+    <h2 lang-data="es">7. Exención de garantías</h2>
+    <h2 lang-data="pt-BR">7. Isenção de garantias</h2>
+    <p lang-data="en">The App is provided “as is” without warranties of any kind. We do not guarantee uninterrupted sync, error-free operation, or specific wellness outcomes.</p>
+    <p lang-data="zh-Hant">本 App 按「現狀」提供，不作任何保證。我們不保證同步不中斷、無錯誤運作或特定成效。</p>
+    <p lang-data="zh-Hans">本 App 按「现状」提供，不作任何保证。我们不保证同步不中断、无错误运作或特定成效。</p>
+    <p lang-data="ja">本アプリは現状有姿で提供され、いかなる保証もありません。同期の継続、無欠陥動作、特定の成果は保証しません。</p>
+    <p lang-data="ko">본 앱은 「있는 그대로」 제공되며 어떠한 보증도 하지 않습니다. 동기화 지속, 무오류 작동, 특정 웰니스 결과를 보장하지 않습니다.</p>
+    <p lang-data="es">La App se ofrece «tal cual», sin garantías. No garantizamos sincronización ininterrumpida, funcionamiento sin errores ni resultados concretos de bienestar.</p>
+    <p lang-data="pt-BR">O App é oferecido «como está», sem garantias. Não garantimos sincronização ininterrupta, funcionamento sem erros nem resultados específicos de bem-estar.</p>
 
-    <h2 class="en">8. Limitation of liability</h2>
-    <h2 class="zh">8. 責任限制</h2>
-    <p class="en">To the maximum extent permitted by law, Howly shall not be liable for indirect, incidental, or consequential damages arising from use of the App.</p>
-    <p class="zh">在法律允許的最大範圍內，Howly 不對因使用本 App 產生的間接、附带或衍生損害負責。</p>
+    <h2 lang-data="en">8. Limitation of liability</h2>
+    <h2 lang-data="zh-Hant">8. 責任限制</h2>
+    <h2 lang-data="zh-Hans">8. 责任限制</h2>
+    <h2 lang-data="ja">8. 責任の制限</h2>
+    <h2 lang-data="ko">8. 책임 제한</h2>
+    <h2 lang-data="es">8. Limitación de responsabilidad</h2>
+    <h2 lang-data="pt-BR">8. Limitação de responsabilidade</h2>
+    <p lang-data="en">To the maximum extent permitted by law, Howly shall not be liable for indirect, incidental, or consequential damages arising from use of the App.</p>
+    <p lang-data="zh-Hant">在法律允許的最大範圍內，Howly 不對因使用本 App 產生的間接、附帶或衍生損害負責。</p>
+    <p lang-data="zh-Hans">在法律允许的最大范围内，Howly 不对因使用本 App 产生的间接、附带或衍生损害负责。</p>
+    <p lang-data="ja">法令で認められる最大限の範囲で、Howlyは本アプリの利用に起因する間接的・付随的・結果的損害について責任を負いません。</p>
+    <p lang-data="ko">법이 허용하는 최대 범위에서 Howly는 본 앱 사용으로 인한 간접·부수·결과적 손해에 대해 책임지지 않습니다.</p>
+    <p lang-data="es">En la máxima medida permitida por la ley, Howly no será responsable de daños indirectos, incidentales o consecuentes derivados del uso de la App.</p>
+    <p lang-data="pt-BR">Na máxima medida permitida por lei, a Howly não será responsável por danos indiretos, incidentais ou consequentes decorrentes do uso do App.</p>
 
-    <h2 class="en">9. Changes &amp; termination</h2>
-    <h2 class="zh">9. 變更與終止</h2>
-    <p class="en">We may update the App or these Terms. Continued use constitutes acceptance. You may stop using the App at any time by deleting it.</p>
-    <p class="zh">我們可能更新 App 或本條款。繼續使用即表示接受。你可隨時刪除 App 停止使用。</p>
+    <h2 lang-data="en">9. Changes &amp; termination</h2>
+    <h2 lang-data="zh-Hant">9. 變更與終止</h2>
+    <h2 lang-data="zh-Hans">9. 变更与终止</h2>
+    <h2 lang-data="ja">9. 変更と終了</h2>
+    <h2 lang-data="ko">9. 변경 및 종료</h2>
+    <h2 lang-data="es">9. Cambios y terminación</h2>
+    <h2 lang-data="pt-BR">9. Alterações e encerramento</h2>
+    <p lang-data="en">We may update the App or these Terms. Continued use constitutes acceptance. You may stop using the App at any time by deleting it.</p>
+    <p lang-data="zh-Hant">我們可能更新 App 或本條款。繼續使用即表示接受。你可隨時刪除 App 停止使用。</p>
+    <p lang-data="zh-Hans">我们可能更新 App 或本条款。继续使用即表示接受。你可随时删除 App 停止使用。</p>
+    <p lang-data="ja">アプリまたは本規約は更新されることがあります。継続利用は同意を意味します。削除すればいつでも利用を終了できます。</p>
+    <p lang-data="ko">앱 또는 본 약관은 업데이트될 수 있습니다. 계속 사용하면 동의한 것으로 봅니다. 앱을 삭제하면 언제든지 사용을 중단할 수 있습니다.</p>
+    <p lang-data="es">Podemos actualizar la App o estos Términos. Seguir usando implica aceptación. Puedes dejar de usar la App en cualquier momento borrándola.</p>
+    <p lang-data="pt-BR">Podemos atualizar o App ou estes Termos. Continuar usando implica aceitação. Você pode parar de usar o App a qualquer momento apagando-o.</p>
 
-    <h2 class="en">10. Apple</h2>
-    <h2 class="zh">10. Apple 條款</h2>
-    <p class="en">Apple is not responsible for the App or its content. Apple has no obligation to provide maintenance or support. Apple is a third-party beneficiary of this EULA.</p>
-    <p class="zh">Apple 不對本 App 或其內容負責，亦無維護或支援義務。Apple 為本 EULA 的第三方受益人。</p>
+    <h2 lang-data="en">10. Apple</h2>
+    <h2 lang-data="zh-Hant">10. Apple 條款</h2>
+    <h2 lang-data="zh-Hans">10. Apple 条款</h2>
+    <h2 lang-data="ja">10. Apple</h2>
+    <h2 lang-data="ko">10. Apple</h2>
+    <h2 lang-data="es">10. Apple</h2>
+    <h2 lang-data="pt-BR">10. Apple</h2>
+    <p lang-data="en">Apple is not responsible for the App or its content. Apple has no obligation to provide maintenance or support. Apple is a third-party beneficiary of this EULA.</p>
+    <p lang-data="zh-Hant">Apple 不對本 App 或其內容負責，亦無維護或支援義務。Apple 為本 EULA 的第三方受益人。</p>
+    <p lang-data="zh-Hans">Apple 不对本 App 或其内容负责，亦无维护或支持义务。Apple 为本 EULA 的第三方受益人。</p>
+    <p lang-data="ja">Appleは本アプリやその内容について責任を負わず、保守・サポート義務もありません。Appleは本EULAの第三者受益者です。</p>
+    <p lang-data="ko">Apple은 본 앱이나 그 내용에 대해 책임지지 않으며 유지보수·지원 의무도 없습니다. Apple은 본 EULA의 제3자 수익자입니다.</p>
+    <p lang-data="es">Apple no es responsable de la App ni de su contenido. Apple no tiene obligación de mantenimiento o soporte. Apple es un tercero beneficiario de este EULA.</p>
+    <p lang-data="pt-BR">A Apple não é responsável pelo App nem pelo seu conteúdo. A Apple não tem obrigação de manutenção ou suporte. A Apple é terceira beneficiária deste EULA.</p>
 
-    <h2 class="en">11. Contact</h2>
-    <h2 class="zh">11. 聯絡</h2>
-    <p class="en"><a href="mailto:howly7777777@gmail.com">howly7777777@gmail.com</a></p>
-    <p class="zh"><a href="mailto:howly7777777@gmail.com">howly7777777@gmail.com</a></p>
+    <h2 lang-data="en">11. Contact</h2>
+    <h2 lang-data="zh-Hant">11. 聯絡</h2>
+    <h2 lang-data="zh-Hans">11. 联络</h2>
+    <h2 lang-data="ja">11. お問い合わせ</h2>
+    <h2 lang-data="ko">11. 문의</h2>
+    <h2 lang-data="es">11. Contacto</h2>
+    <h2 lang-data="pt-BR">11. Contato</h2>
+    <p><a href="mailto:howly7777777@gmail.com">howly7777777@gmail.com</a></p>
 
     <div class="links-row" style="margin-top: 2rem;">
-      <a class="btn btn-secondary" href="index.html">← Home</a>
-      <a class="btn btn-secondary en" href="privacy.html">Privacy Policy</a>
-      <a class="btn btn-secondary zh" href="privacy.html">隱私政策</a>
+      <a class="btn btn-secondary" href="index.html">
+        <span lang-data="en">← Home</span>
+        <span lang-data="zh-Hant">← 首頁</span>
+        <span lang-data="zh-Hans">← 首页</span>
+        <span lang-data="ja">← ホーム</span>
+        <span lang-data="ko">← 홈</span>
+        <span lang-data="es">← Inicio</span>
+        <span lang-data="pt-BR">← Início</span>
+      </a>
+      <a class="btn btn-secondary" href="privacy.html">
+        <span lang-data="en">Privacy Policy</span>
+        <span lang-data="zh-Hant">隱私政策</span>
+        <span lang-data="zh-Hans">隐私政策</span>
+        <span lang-data="ja">プライバシーポリシー</span>
+        <span lang-data="ko">개인정보 처리방침</span>
+        <span lang-data="es">Política de privacidad</span>
+        <span lang-data="pt-BR">Política de privacidade</span>
+      </a>
     </div>
   </main>
 
